@@ -1,0 +1,135 @@
+<LineChart @ref="lineChart" Width="900" Class="mb-4" />
+<Button Type="ButtonType.Button" Color="ButtonColor.Primary" Size="Size.Small" @onclick="async () => await SetDados()">
+    Dias </Button>
+@code {
+    [Inject]
+    Consultas consultas { get; set; }
+    LineChartDataset temperatura;
+    LineChartDataset umidade;
+    public List<double> temperaturaData = [];
+    public List<double> umidadeData = [];
+    private LineChart lineChart = default!;
+    private LineChartOptions lineChartOptions = default!;
+    private ChartData chartData = default!;
+    async Task SetDados()
+    {
+        var newDatasets = new List<IChartDataset>();
+
+        foreach (var dataset in chartData.Datasets)
+        {
+            if (dataset is LineChartDataset lineChartDataset
+            && lineChartDataset is not null
+            && lineChartDataset.Data is not null)
+            {
+                Random random = new();
+                var count = lineChartDataset.Data.Count;
+
+                var newData = new List<double>();
+                for (var i = 0; i < 24; i++)
+                {
+                    newData.Add(random.Next(200));
+                }
+
+                lineChartDataset.Data = newData;
+                newDatasets.Add(lineChartDataset);
+            }
+        }
+
+        chartData.Datasets = newDatasets;
+
+        await lineChart.UpdateAsync(chartData, lineChartOptions);
+    }
+    protected override void OnInitialized()
+    {
+        chartData = new ChartData
+            {
+                Labels = Labels(),
+                Datasets = DataSets(temperaturaData, umidadeData)
+            };
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await lineChart.InitializeAsync(chartData, ChartOptions());
+            while (true)
+            {
+
+                temperaturaData.Add(await consultas.GetTemperatura());
+                umidadeData.Add(await consultas.GetUmidade());
+
+                chartData = new ChartData
+                    {
+                        Labels = Labels(),
+                        Datasets = DataSets(temperaturaData, umidadeData)
+                    };
+
+
+                await lineChart.UpdateAsync(chartData, ChartOptions());
+                StateHasChanged();
+                await Task.Delay(5000);
+            }
+        }
+        await base.OnAfterRenderAsync(firstRender);
+    }
+    List<string> Labels()
+    {
+        var labels = new List<string> { };
+        for (int i = 1; i <= 24; i++)
+        {
+            labels.Add(i.ToString());
+        }
+        return labels;
+    }
+    List<IChartDataset> DataSets(List<double> dataTemperatura, List<double> dataUmidade)
+    {
+        var colors = ColorBuilder.CategoricalTwelveColors;
+        var datasets = new List<IChartDataset>();
+        temperatura = new LineChartDataset
+            {
+                Label = "Temperatura",
+                BackgroundColor = new List<string> { colors[0] },
+                Data = dataTemperatura,
+                BorderColor = new List<string> { colors[0] },
+                BorderWidth = new List<double> { 2 },
+                HoverBorderWidth = new List<double> { 4 },
+                PointBackgroundColor = new List<string> { colors[0] },
+                PointRadius = new List<int> { 0 },
+                PointHoverRadius = new List<int> { 4 }
+            };
+
+        umidade = new LineChartDataset
+            {
+                Label = "Umidade",
+                BackgroundColor = new List<string> { colors[1] },
+                Data = dataUmidade,
+                BorderColor = new List<string> { colors[1] },
+                BorderWidth = new List<double> { 2 },
+                HoverBorderWidth = new List<double> { 4 },
+                PointBackgroundColor = new List<string> { colors[1] },
+                PointRadius = new List<int> { 0 },
+                PointHoverRadius = new List<int> { 4 }
+            };
+        datasets.Add(temperatura);
+        datasets.Add(umidade);
+        return datasets;
+    }
+    LineChartOptions ChartOptions()
+    {
+        lineChartOptions = new();
+        lineChartOptions.Responsive = true;
+        lineChartOptions.Interaction = new Interaction { Mode = InteractionMode.Index };
+
+        lineChartOptions.Scales.Y!.Max = 100;
+
+        lineChartOptions.Scales.X!.Title!.Text = DateTime.Now.Date.ToString("dd/MM/yyyy");
+        lineChartOptions.Scales.X.Title.Display = true;
+
+        lineChartOptions.Plugins.Title!.Text = "Clima";
+        lineChartOptions.Plugins.Title.Display = true;
+        return lineChartOptions;
+    }
+
+
+}
