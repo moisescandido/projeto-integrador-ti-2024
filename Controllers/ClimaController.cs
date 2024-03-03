@@ -5,16 +5,29 @@ namespace projeto.Controllers
 {
     public class ClimaController : ControllerBase
     {
-        [HttpPost]
-        public async Task<IActionResult> Post([FromBody] float temperatura, float umidade)
+        Consultas _consultas;
+        public ClimaController(Consultas consultas)
+        {
+            _consultas = consultas;
+        }
+
+        [HttpPost, Route("/clima")]
+        public async Task<IActionResult> Post(float temperatura, float umidade)
         {
             try
             {
-                Console.WriteLine("temperatura: " + temperatura);
-                Console.WriteLine("umidade: " + umidade);
-                Consultas consultas = new Consultas();
-                await consultas.SetData(temperatura, umidade);
-                return Ok("Dados inseridos!");
+                if (temperatura == 0 || umidade == 0)
+                {
+                    return BadRequest();
+                }
+                Clima clima = new Clima
+                {
+                    Umidade = umidade,
+                    Temperatura = temperatura,
+                    Data = DateTime.Now
+                };
+                _consultas.SetClima(clima);
+                return Ok();
             }
             catch (Exception ex)
             {

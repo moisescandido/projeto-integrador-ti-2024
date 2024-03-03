@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "F1nj7JHhC5me1eMMNy4aq98rOpaMtySQX3CiUpgx28M=",
+  "Hash": "fihdjW5TV+jD0SKhvPbEfuAxJzxS4Ur0D8vrES9XgCw=",
   "Source": "projeto",
   "BasePath": "_content/projeto",
   "Mode": "Default",
@@ -10,7 +10,7 @@
     {
       "Name": "projeto/wwwroot",
       "Source": "projeto",
-      "ContentRoot": "/home/goliaz/Projetos/projeto/wwwroot/",
+      "ContentRoot": "/home/goliaz/Projetos/projeto-integrador-ti-2024/wwwroot/",
       "BasePath": "_content/projeto",
       "Pattern": "**"
     }
@@ -150,10 +150,10 @@
       "OriginalItemSpec": "/home/goliaz/.nuget/packages/blazor.bootstrap/2.0.0/staticwebassets/pdfjs-4.0.379.worker.min.mjs"
     },
     {
-      "Identity": "/home/goliaz/Projetos/projeto/obj/Debug/net8.0/scopedcss/bundle/projeto.styles.css",
+      "Identity": "/home/goliaz/Projetos/projeto-integrador-ti-2024/obj/Debug/net8.0/scopedcss/bundle/projeto.styles.css",
       "SourceId": "projeto",
       "SourceType": "Computed",
-      "ContentRoot": "/home/goliaz/Projetos/projeto/obj/Debug/net8.0/scopedcss/bundle/",
+      "ContentRoot": "/home/goliaz/Projetos/projeto-integrador-ti-2024/obj/Debug/net8.0/scopedcss/bundle/",
       "BasePath": "_content/projeto",
       "RelativePath": "projeto.styles.css",
       "AssetKind": "All",
@@ -166,13 +166,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/home/goliaz/Projetos/projeto/obj/Debug/net8.0/scopedcss/bundle/projeto.styles.css"
+      "OriginalItemSpec": "/home/goliaz/Projetos/projeto-integrador-ti-2024/obj/Debug/net8.0/scopedcss/bundle/projeto.styles.css"
     },
     {
-      "Identity": "/home/goliaz/Projetos/projeto/wwwroot/app.css",
+      "Identity": "/home/goliaz/Projetos/projeto-integrador-ti-2024/wwwroot/app.css",
       "SourceId": "projeto",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/goliaz/Projetos/projeto/wwwroot/",
+      "ContentRoot": "/home/goliaz/Projetos/projeto-integrador-ti-2024/wwwroot/",
       "BasePath": "_content/projeto",
       "RelativePath": "app.css",
       "AssetKind": "All",
@@ -188,10 +188,10 @@
       "OriginalItemSpec": "wwwroot/app.css"
     },
     {
-      "Identity": "/home/goliaz/Projetos/projeto/wwwroot/bootstrap/bootstrap.min.css",
+      "Identity": "/home/goliaz/Projetos/projeto-integrador-ti-2024/wwwroot/bootstrap/bootstrap.min.css",
       "SourceId": "projeto",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/goliaz/Projetos/projeto/wwwroot/",
+      "ContentRoot": "/home/goliaz/Projetos/projeto-integrador-ti-2024/wwwroot/",
       "BasePath": "_content/projeto",
       "RelativePath": "bootstrap/bootstrap.min.css",
       "AssetKind": "All",
@@ -207,10 +207,10 @@
       "OriginalItemSpec": "wwwroot/bootstrap/bootstrap.min.css"
     },
     {
-      "Identity": "/home/goliaz/Projetos/projeto/wwwroot/bootstrap/bootstrap.min.css.map",
+      "Identity": "/home/goliaz/Projetos/projeto-integrador-ti-2024/wwwroot/bootstrap/bootstrap.min.css.map",
       "SourceId": "projeto",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/goliaz/Projetos/projeto/wwwroot/",
+      "ContentRoot": "/home/goliaz/Projetos/projeto-integrador-ti-2024/wwwroot/",
       "BasePath": "_content/projeto",
       "RelativePath": "bootstrap/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -226,10 +226,10 @@
       "OriginalItemSpec": "wwwroot/bootstrap/bootstrap.min.css.map"
     },
     {
-      "Identity": "/home/goliaz/Projetos/projeto/wwwroot/favicon.png",
+      "Identity": "/home/goliaz/Projetos/projeto-integrador-ti-2024/wwwroot/favicon.png",
       "SourceId": "projeto",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/goliaz/Projetos/projeto/wwwroot/",
+      "ContentRoot": "/home/goliaz/Projetos/projeto-integrador-ti-2024/wwwroot/",
       "BasePath": "_content/projeto",
       "RelativePath": "favicon.png",
       "AssetKind": "All",

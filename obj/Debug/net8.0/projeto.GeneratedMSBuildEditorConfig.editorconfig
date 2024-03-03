@@ -9,35 +9,35 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = projeto
 build_property.RootNamespace = projeto
-build_property.ProjectDir = c:\Users\moises.cosantos\Downloads\projeto\
+build_property.ProjectDir = /home/goliaz/Projetos/projeto-integrador-ti-2024/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = c:\Users\moises.cosantos\Downloads\projeto
+build_property.MSBuildProjectDirectory = /home/goliaz/Projetos/projeto-integrador-ti-2024
 build_property._RazorSourceGeneratorDebug = 
 
-[c:/Users/moises.cosantos/Downloads/projeto/Components/App.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBcHAucmF6b3I=
+[/home/goliaz/Projetos/projeto-integrador-ti-2024/Components/App.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9BcHAucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/moises.cosantos/Downloads/projeto/Components/Component/Grafico.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xDb21wb25lbnRcR3JhZmljby5yYXpvcg==
+[/home/goliaz/Projetos/projeto-integrador-ti-2024/Components/Component/Grafico.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Db21wb25lbnQvR3JhZmljby5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/moises.cosantos/Downloads/projeto/Components/Pages/Error.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFcnJvci5yYXpvcg==
+[/home/goliaz/Projetos/projeto-integrador-ti-2024/Components/Pages/Error.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9FcnJvci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/moises.cosantos/Downloads/projeto/Components/Pages/Home.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIb21lLnJhem9y
+[/home/goliaz/Projetos/projeto-integrador-ti-2024/Components/Pages/Home.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9Ib21lLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/moises.cosantos/Downloads/projeto/Components/Routes.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xSb3V0ZXMucmF6b3I=
+[/home/goliaz/Projetos/projeto-integrador-ti-2024/Components/Routes.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Sb3V0ZXMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/moises.cosantos/Downloads/projeto/Components/_Imports.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xfSW1wb3J0cy5yYXpvcg==
+[/home/goliaz/Projetos/projeto-integrador-ti-2024/Components/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9fSW1wb3J0cy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 

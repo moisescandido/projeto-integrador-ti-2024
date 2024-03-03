@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\moises.cosantos\\Downloads\\projeto\\projeto.csproj": {}
+    "/home/goliaz/Projetos/projeto-integrador-ti-2024/projeto.csproj": {}
   },
   "projects": {
-    "C:\\Users\\moises.cosantos\\Downloads\\projeto\\projeto.csproj": {
+    "/home/goliaz/Projetos/projeto-integrador-ti-2024/projeto.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\moises.cosantos\\Downloads\\projeto\\projeto.csproj",
+        "projectUniqueName": "/home/goliaz/Projetos/projeto-integrador-ti-2024/projeto.csproj",
         "projectName": "projeto",
-        "projectPath": "C:\\Users\\moises.cosantos\\Downloads\\projeto\\projeto.csproj",
-        "packagesPath": "C:\\Users\\moises.cosantos\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\moises.cosantos\\Downloads\\projeto\\obj\\",
+        "projectPath": "/home/goliaz/Projetos/projeto-integrador-ti-2024/projeto.csproj",
+        "packagesPath": "/home/goliaz/.nuget/packages/",
+        "outputPath": "/home/goliaz/Projetos/projeto-integrador-ti-2024/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\moises.cosantos\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/home/goliaz/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -44,9 +42,19 @@
               "target": "Package",
               "version": "[2.0.0, )"
             },
-            "Dapper": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
-              "version": "[2.1.28, )"
+              "version": "[8.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite.Design": {
+              "target": "Package",
+              "version": "[1.1.6, )"
             },
             "System.Data.SQLite": {
               "target": "Package",
@@ -64,6 +72,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.2, 8.0.2]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -72,7 +86,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.102/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
