@@ -1,0 +1,37 @@
+{
+  "Files": [
+    {
+      "Id": "/home/goliaz/Projetos/projeto-integrador-ti-2024/wwwroot/app.css",
+      "PackagePath": "staticwebassets/app.css"
+    },
+    {
+      "Id": "/home/goliaz/Projetos/projeto-integrador-ti-2024/wwwroot/bootstrap/bootstrap.min.css",
+      "PackagePath": "staticwebassets/bootstrap/bootstrap.min.css"
+    },
+    {
+      "Id": "/home/goliaz/Projetos/projeto-integrador-ti-2024/wwwroot/bootstrap/bootstrap.min.css.map",
+      "PackagePath": "staticwebassets/bootstrap/bootstrap.min.css.map"
+    },
+    {
+      "Id": "/home/goliaz/Projetos/projeto-integrador-ti-2024/wwwroot/favicon.png",
+      "PackagePath": "staticwebassets/favicon.png"
+    },
+    {
+      "Id": "obj/Release/net8.0/staticwebassets/msbuild.build.projeto.props",
+      "PackagePath": "build\\projeto.props"
+    },
+    {
+      "Id": "obj/Release/net8.0/staticwebassets/msbuild.buildMultiTargeting.projeto.props",
+      "PackagePath": "buildMultiTargeting\\projeto.props"
+    },
+    {
+      "Id": "obj/Release/net8.0/staticwebassets/msbuild.buildTransitive.projeto.props",
+      "PackagePath": "buildTransitive\\projeto.props"
+    },
+    {
+      "Id": "obj/Release/net8.0/staticwebassets/msbuild.projeto.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

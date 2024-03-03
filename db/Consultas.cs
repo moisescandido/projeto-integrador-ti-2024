@@ -3,6 +3,7 @@ using System.Data.Common;
 using System.Data.Entity;
 using System.Data.SQLite;
 using Contatos.Models;
+using Microsoft.EntityFrameworkCore;
 using projeto.Models;
 
 namespace projeto.db

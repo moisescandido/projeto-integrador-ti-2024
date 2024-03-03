@@ -4,12 +4,13 @@ using projeto.Components;
 using projeto.db;
 
 var builder = WebApplication.CreateBuilder(args);
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 // Add services to the container.
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
 builder.Services.AddControllers();
 builder.Services.AddBlazorBootstrap();
-builder.Services.AddDbContext<ClimaContexto>(x => x.UseSqlite("Data Source=./db/projeto.db"));
+builder.Services.AddDbContext<ClimaContexto>(x => x.UseSqlite(connectionString));
 builder.Services.AddScoped<Consultas>();
 var app = builder.Build();
 // Configure the HTTP request pipeline.
