@@ -11,8 +11,8 @@ namespace projeto.Controllers
             _consultas = consultas;
         }
 
-        [HttpPost, Route("/clima")]
-        public IActionResult Post([FromHeader] float temperatura, [FromHeader] float umidade)
+        [HttpPost, Route("/clima/{temperatura}/{umidade}")]
+        public IActionResult Post(float temperatura, float umidade)
         {
             try
             {

@@ -1,27 +1,27 @@
 {
   "Files": [
     {
-      "Id": "/home/goliaz/Projetos/projeto-integrador-ti-2024/wwwroot/app.css",
+      "Id": "/home/moises/Projetos/projeto-integrador-ti-2024/wwwroot/app.css",
       "PackagePath": "staticwebassets/app.css"
     },
     {
-      "Id": "/home/goliaz/Projetos/projeto-integrador-ti-2024/wwwroot/bootstrap/bootstrap.min.css",
+      "Id": "/home/moises/Projetos/projeto-integrador-ti-2024/wwwroot/bootstrap/bootstrap.min.css",
       "PackagePath": "staticwebassets/bootstrap/bootstrap.min.css"
     },
     {
-      "Id": "/home/goliaz/Projetos/projeto-integrador-ti-2024/wwwroot/bootstrap/bootstrap.min.css.map",
+      "Id": "/home/moises/Projetos/projeto-integrador-ti-2024/wwwroot/bootstrap/bootstrap.min.css.map",
       "PackagePath": "staticwebassets/bootstrap/bootstrap.min.css.map"
     },
     {
-      "Id": "/home/goliaz/Projetos/projeto-integrador-ti-2024/wwwroot/favicon.png",
+      "Id": "/home/moises/Projetos/projeto-integrador-ti-2024/wwwroot/favicon.png",
       "PackagePath": "staticwebassets/favicon.png"
     },
     {
-      "Id": "/home/goliaz/Projetos/projeto-integrador-ti-2024/wwwroot/grafico.css",
+      "Id": "/home/moises/Projetos/projeto-integrador-ti-2024/wwwroot/grafico.css",
       "PackagePath": "staticwebassets/grafico.css"
     },
     {
-      "Id": "/home/goliaz/Projetos/projeto-integrador-ti-2024/wwwroot/projeto.db",
+      "Id": "/home/moises/Projetos/projeto-integrador-ti-2024/wwwroot/projeto.db",
       "PackagePath": "staticwebassets/projeto.db"
     },
     {

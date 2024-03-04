@@ -67,7 +67,9 @@ namespace projeto.Components.Component
                         continue;
                     }
                     await InvokeAsync(StateHasChanged);
+
                     await Task.Delay(5000);
+                    await base.OnAfterRenderAsync(firstRender);
                 }
             }
         }
