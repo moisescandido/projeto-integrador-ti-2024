@@ -13,10 +13,10 @@ def generate_data():
 while True:
     # Gerar dados aleatórios
     temperatura, umidade = generate_data()
-    url = f'http://localhost:5091/clima?temperatura={temperatura}&umidade={umidade}'
-    # Corpo da requisição
+    url = f'https://raspti-web.azurewebsites.net/clima?temperatura={temperatura}&umidade={umidade}'
+    # Corpo da requisiçãoe
 
-    # Enviar solicitação POST
+    # Enviar solicitação POSTe
     try:
         response = requests.post(url)
         if response.status_code == 200:

@@ -20,6 +20,12 @@ namespace projeto.db
             _db.Clima.Add(clima);
             _db.SaveChanges();
         }
+        public void DeletarDados()
+        {
+            string query = "DELETE FROM clima WHERE id > 0 and id <= 100";
+            _db.Clima.FromSqlRaw(query);
+            _db.SaveChanges();
+        }
         public async Task<Clima> GetClima()
         {
             Clima? clima = _db.Clima.OrderByDescending(p => p.Data)

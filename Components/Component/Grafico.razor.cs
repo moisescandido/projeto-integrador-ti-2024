@@ -47,6 +47,7 @@ namespace projeto.Components.Component
                         {
                             temperaturaData.RemoveAt(0);
                             umidadeData.RemoveAt(0);
+                            consultas.DeletarDados();
                         }
 
                         Clima? clima = await consultas.GetClima();
