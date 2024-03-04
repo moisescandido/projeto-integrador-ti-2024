@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "fihdjW5TV+jD0SKhvPbEfuAxJzxS4Ur0D8vrES9XgCw=",
+  "Hash": "Ggor5CNGLaIgVP9eVC6u9+m/PyzMWofAgvzkyhJldxQ=",
   "Source": "projeto",
   "BasePath": "_content/projeto",
   "Mode": "Default",
@@ -243,6 +243,44 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/favicon.png"
+    },
+    {
+      "Identity": "/home/goliaz/Projetos/projeto-integrador-ti-2024/wwwroot/grafico.css",
+      "SourceId": "projeto",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/goliaz/Projetos/projeto-integrador-ti-2024/wwwroot/",
+      "BasePath": "_content/projeto",
+      "RelativePath": "grafico.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/grafico.css"
+    },
+    {
+      "Identity": "/home/goliaz/Projetos/projeto-integrador-ti-2024/wwwroot/projeto.db",
+      "SourceId": "projeto",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/goliaz/Projetos/projeto-integrador-ti-2024/wwwroot/",
+      "BasePath": "_content/projeto",
+      "RelativePath": "projeto.db",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/projeto.db"
     }
   ]
 }

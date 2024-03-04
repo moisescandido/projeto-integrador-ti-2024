@@ -1,6 +1,5 @@
 using BlazorBootstrap;
 using Microsoft.AspNetCore.Components;
-using projeto.Controllers;
 using projeto.db;
 using projeto.Models;
 
@@ -21,7 +20,7 @@ namespace projeto.Components.Component
         private List<string> Labels()
         {
             List<string> lista = new List<string>();
-            for (int i = 0; i <= 50; i++)
+            for (int i = 0; i <= 50; i += 5)
             {
                 lista.Add($"{i}");
             }
@@ -44,26 +43,32 @@ namespace projeto.Components.Component
                 {
                     try
                     {
+                        if (temperaturaData.Count > 10 || umidadeData.Count > 10)
+                        {
+                            temperaturaData.RemoveAt(0);
+                            umidadeData.RemoveAt(0);
+                        }
+
                         Clima? clima = await consultas.GetClima();
                         temperaturaData.Add(clima.Temperatura);
                         umidadeData.Add(clima.Umidade);
+
+                        chartData = new ChartData
+                        {
+                            Datasets = DataSets(temperaturaData, umidadeData),
+                            Labels = Labels(),
+                        };
+
+                        await lineChart.UpdateAsync(chartData, ChartOptions());
                     }
                     catch
                     {
                         continue;
                     }
-                    chartData = new ChartData
-                    {
-                        Datasets = DataSets(temperaturaData, umidadeData),
-                        Labels = Labels(),
-                    };
-
-                    await lineChart.UpdateAsync(chartData, ChartOptions());
-                    StateHasChanged();
+                    await InvokeAsync(StateHasChanged);
                     await Task.Delay(5000);
                 }
             }
-            await base.OnAfterRenderAsync(firstRender);
         }
         List<IChartDataset> DataSets(List<double> dataTemperatura, List<double> dataUmidade)
         {

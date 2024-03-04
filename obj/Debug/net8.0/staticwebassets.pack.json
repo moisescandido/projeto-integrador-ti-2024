@@ -17,6 +17,14 @@
       "PackagePath": "staticwebassets/favicon.png"
     },
     {
+      "Id": "/home/goliaz/Projetos/projeto-integrador-ti-2024/wwwroot/grafico.css",
+      "PackagePath": "staticwebassets/grafico.css"
+    },
+    {
+      "Id": "/home/goliaz/Projetos/projeto-integrador-ti-2024/wwwroot/projeto.db",
+      "PackagePath": "staticwebassets/projeto.db"
+    },
+    {
       "Id": "obj/Debug/net8.0/staticwebassets/msbuild.build.projeto.props",
       "PackagePath": "build\\projeto.props"
     },

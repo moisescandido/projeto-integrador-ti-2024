@@ -13,7 +13,7 @@ def generate_data():
 while True:
     # Gerar dados aleatórios
     temperatura, umidade = generate_data()
-    url = f'https://rasp-web.azurewebsites.net/clima?temperatura={temperatura}&umidade={umidade}'
+    url = f'http://localhost:5091/clima?temperatura={temperatura}&umidade={umidade}'
     # Corpo da requisição
 
     # Enviar solicitação POST

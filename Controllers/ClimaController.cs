@@ -16,6 +16,7 @@ namespace projeto.Controllers
         {
             try
             {
+
                 if (temperatura == 0 || umidade == 0)
                 {
                     return BadRequest();

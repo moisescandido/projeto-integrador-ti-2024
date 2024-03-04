@@ -1,3 +1,15 @@
 @inherits GraficoBase
-
-<LineChart @ref="@lineChart" Width="1000" Class="mb-4" />
+<link rel="stylesheet" href="grafico.css">
+<div id="main">
+    <LineChart @ref="@lineChart" Width="900" Class="mb-4" />
+    <div id="cards">
+        <Card id="card">
+            <p>Temperatura</p>
+            <h1>@temperaturaData.LastOrDefault().ToString("0.00")°C</h1>
+        </Card>
+        <Card id="card">
+            <p>Umidade</p>
+            <h1>@umidadeData.LastOrDefault().ToString("0.00")%</h1>
+        </Card>
+    </div>
+</div>
