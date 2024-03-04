@@ -6,8 +6,8 @@ import dht
 
 
 def connect():
-    ssid = 'Perola'
-    password = 'claydermanxyw021668'
+    ssid = 'admin'
+    password = 'admin'
     wlan = network.WLAN(network.STA_IF)
     wlan.active(True)
     wlan.connect(ssid, password)

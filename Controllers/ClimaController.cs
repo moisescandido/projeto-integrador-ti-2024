@@ -12,7 +12,7 @@ namespace projeto.Controllers
         }
 
         [HttpPost, Route("/clima")]
-        public IActionResult Post(float temperatura, float umidade)
+        public IActionResult Post([FromHeader] float temperatura, float umidade)
         {
             try
             {
