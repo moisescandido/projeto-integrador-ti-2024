@@ -16,10 +16,9 @@ namespace projeto.Controllers
         {
             try
             {
-
                 if (temperatura == 0 || umidade == 0)
                 {
-                    return BadRequest();
+                    return BadRequest("Dados incorretos!");
                 }
                 Clima clima = new Clima
                 {
