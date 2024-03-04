@@ -50,7 +50,7 @@ namespace projeto.Components.Component
                             consultas.DeletarDados();
                         }
 
-                        Clima? clima = await consultas.GetClima();
+                        Clima? clima = consultas.GetClima();
                         temperaturaData.Add(clima.Temperatura);
                         umidadeData.Add(clima.Umidade);
 
@@ -67,7 +67,7 @@ namespace projeto.Components.Component
                         continue;
                     }
                     await InvokeAsync(StateHasChanged);
-                    await Task.Delay(5000);
+                    Thread.Sleep(5000);
                 }
             }
         }

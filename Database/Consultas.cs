@@ -26,7 +26,7 @@ namespace projeto.db
             _db.Clima.FromSqlRaw(query);
             _db.SaveChanges();
         }
-        public async Task<Clima> GetClima()
+        public Clima GetClima()
         {
             Clima? clima = _db.Clima.OrderByDescending(p => p.Data)
                        .FirstOrDefault();
