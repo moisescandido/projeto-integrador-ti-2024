@@ -51,6 +51,9 @@ namespace projeto.Components.Component
                             umidadeData.RemoveAt(0);
                         }
                         Clima clima = await consultas.GetClima();
+                        Console.WriteLine("Temperatura: " + clima.Temperatura);
+                        Console.WriteLine("Umidade: " + clima.Umidade);
+                        Console.WriteLine("Id: " + clima.Id);
                         temperaturaData.Add(clima.Temperatura);
                         umidadeData.Add(clima.Umidade);
 
@@ -67,6 +70,7 @@ namespace projeto.Components.Component
                         continue;
                     }
                     await InvokeAsync(StateHasChanged);
+                    await Task.Delay(5000);
                 }
             }
         }

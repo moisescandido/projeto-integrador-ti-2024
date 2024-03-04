@@ -24,7 +24,6 @@ namespace projeto.db
         public async Task<Clima> GetClima()
         {
             return await _db.Clima.LastOrDefaultAsync();
-
         }
     }
 }
