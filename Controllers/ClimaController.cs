@@ -12,13 +12,18 @@ namespace projeto.Controllers
         }
 
         [HttpPost, Route("/clima")]
-        public IActionResult Post([FromHeader] float temperatura, float umidade)
+        public IActionResult Post([FromHeader] float temperatura, [FromHeader] float umidade)
         {
             try
             {
                 if (temperatura == 0 || umidade == 0)
                 {
-                    return BadRequest("Dados incorretos!");
+                    return BadRequest(new
+                    {
+                        mensagem = "Dados incorretos!",
+                        temperatura = temperatura,
+                        umidade = umidade
+                    });
                 }
                 Clima clima = new Clima
                 {

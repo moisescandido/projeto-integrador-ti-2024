@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/home/goliaz/Projetos/projeto-integrador-ti-2024/projeto.csproj": {}
+    "/home/moises/Projetos/projeto-integrador-ti-2024/projeto.csproj": {}
   },
   "projects": {
-    "/home/goliaz/Projetos/projeto-integrador-ti-2024/projeto.csproj": {
+    "/home/moises/Projetos/projeto-integrador-ti-2024/projeto.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/goliaz/Projetos/projeto-integrador-ti-2024/projeto.csproj",
+        "projectUniqueName": "/home/moises/Projetos/projeto-integrador-ti-2024/projeto.csproj",
         "projectName": "projeto",
-        "projectPath": "/home/goliaz/Projetos/projeto-integrador-ti-2024/projeto.csproj",
-        "packagesPath": "/home/goliaz/.nuget/packages/",
-        "outputPath": "/home/goliaz/Projetos/projeto-integrador-ti-2024/obj/",
+        "projectPath": "/home/moises/Projetos/projeto-integrador-ti-2024/projeto.csproj",
+        "packagesPath": "/home/moises/.nuget/packages/",
+        "outputPath": "/home/moises/Projetos/projeto-integrador-ti-2024/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/goliaz/.nuget/NuGet/NuGet.Config"
+          "/home/moises/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -75,7 +75,7 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[8.0.2, 8.0.2]"
+              "version": "[8.0.1, 8.0.1]"
             }
           ],
           "frameworkReferences": {
@@ -86,7 +86,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.102/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
