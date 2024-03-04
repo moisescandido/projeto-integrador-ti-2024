@@ -39,6 +39,8 @@ namespace projeto.Components.Component
             if (firstRender)
             {
                 await lineChart.InitializeAsync(chartData, ChartOptions());
+                Console.WriteLine("Render temperatura:");
+
                 while (true)
                 {
                     try
@@ -47,10 +49,8 @@ namespace projeto.Components.Component
                         {
                             temperaturaData.RemoveAt(0);
                             umidadeData.RemoveAt(0);
-                            consultas.DeletarDados();
                         }
-
-                        Clima? clima = await consultas.GetClima();
+                        Clima clima = await consultas.GetClima();
                         temperaturaData.Add(clima.Temperatura);
                         umidadeData.Add(clima.Umidade);
 
@@ -67,8 +67,6 @@ namespace projeto.Components.Component
                         continue;
                     }
                     await InvokeAsync(StateHasChanged);
-
-                    await Task.Delay(5000);
                 }
             }
         }

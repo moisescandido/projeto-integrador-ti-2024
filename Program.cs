@@ -10,7 +10,7 @@ builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
 builder.Services.AddControllers();
 builder.Services.AddBlazorBootstrap();
-builder.Services.AddDbContext<ClimaContexto>(x => x.UseSqlite(connectionString));
+builder.Services.AddDbContext<ClimaContexto>(x => x.UseInMemoryDatabase("clima"));
 builder.Services.AddScoped<Consultas>();
 var app = builder.Build();
 // Configure the HTTP request pipeline.
