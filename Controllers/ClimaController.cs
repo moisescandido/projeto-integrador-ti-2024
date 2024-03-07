@@ -37,7 +37,7 @@ namespace projeto.Controllers
             }
             catch (Exception ex)
             {
-                return BadRequest(ex.Message);
+                return BadRequest(new { error= ex.Message} );
             }
         }
     }
