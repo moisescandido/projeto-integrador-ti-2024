@@ -3,6 +3,7 @@ using projeto.db;
 using projeto.Models;
 namespace projeto.Controllers
 {
+				[ApiController]
     public class ClimaController : ControllerBase
     {
         Consultas _consultas;
