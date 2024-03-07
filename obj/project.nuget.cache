@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "2Vfgv3sFFQqR303QK06jfWCkUqLULcLFbvN649DFi9rITTBFLWoDfDD8qVWXshzoxK2DsyDvVf8GWcHmDkiwBA==",
+  "dgSpecHash": "Ob+3RF5OnmR8mMGREZ+1r9DdXY5+afHKTzn2zSVX0CuAerPCcFShx4PQhl7UkgOMy+PURIRY1BpleHvba79+ZQ==",
   "success": true,
   "projectFilePath": "/home/moises/Projetos/projeto-integrador-ti-2024/projeto.csproj",
   "expectedPackageFiles": [
@@ -73,7 +73,7 @@
     "/home/moises/.nuget/packages/system.text.json/8.0.0/system.text.json.8.0.0.nupkg.sha512",
     "/home/moises/.nuget/packages/system.threading.channels/6.0.0/system.threading.channels.6.0.0.nupkg.sha512",
     "/home/moises/.nuget/packages/system.windows.extensions/4.7.0/system.windows.extensions.4.7.0.nupkg.sha512",
-    "/home/moises/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.1/microsoft.aspnetcore.app.ref.8.0.1.nupkg.sha512"
+    "/home/moises/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.0/microsoft.aspnetcore.app.ref.8.0.0.nupkg.sha512"
   ],
   "logs": []
 }
