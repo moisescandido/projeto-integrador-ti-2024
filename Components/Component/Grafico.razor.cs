@@ -70,7 +70,7 @@ namespace projeto.Components.Component
                         continue;
                     }
                     await InvokeAsync(StateHasChanged);
-                    await Task.Delay(10000);
+                    await Task.Delay(5000);
                 }
             }
         }
