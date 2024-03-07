@@ -3,7 +3,7 @@ using projeto.db;
 using projeto.Models;
 namespace projeto.Controllers
 {
-				[ApiController]
+    [ApiController]
     public class ClimaController : ControllerBase
     {
         Consultas _consultas;
@@ -37,7 +37,12 @@ namespace projeto.Controllers
             }
             catch (Exception ex)
             {
-                return BadRequest(new { error= ex.Message} );
+                var erro = new
+                {
+                    error = "Mensagem",
+                    mensagem = ex.Message
+                };
+                return BadRequest(erro);
             }
         }
     }
