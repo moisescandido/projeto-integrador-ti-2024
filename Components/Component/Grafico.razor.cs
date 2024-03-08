@@ -27,14 +27,20 @@ namespace projeto.Components.Component
             }
             return lista;
         }
-        protected override async Task OnInitializedAsync()
+        protected override void OnInitialized()
         {
             chartData = new ChartData
             {
                 Datasets = DataSets(temperaturaData, umidadeData),
                 Labels = Labels(),
             };
-            climaData.Add(await consultas.GetClima());
+            climaData.Add(new Clima()
+            {
+                Id = 0,
+                Data = DateTime.Now,
+                Temperatura = 0,
+                Umidade = 0
+            });
         }
         protected override async Task OnAfterRenderAsync(bool firstRender)
         {
