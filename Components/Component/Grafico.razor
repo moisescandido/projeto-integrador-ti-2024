@@ -5,11 +5,11 @@
     <div id="cards">
         <Card id="card">
             <p>Temperatura</p>
-            <h1>@temperaturaData.LastOrDefault().ToString("0.00")°C</h1>
+            <h1>@climaData.LastOrDefault()!.Temperatura.ToString("0.00")°C</h1>
         </Card>
         <Card id="card">
             <p>Umidade</p>
-            <h1>@umidadeData.LastOrDefault().ToString("0.00")%</h1>
+            <h1>@climaData.LastOrDefault()!.Umidade.ToString("0.00")%</h1>
         </Card>
     </div>
 </div>

@@ -11,6 +11,7 @@ namespace projeto.Components.Component
         private Consultas consultas { get; set; }
         public LineChartDataset temperatura;
         public LineChartDataset umidade;
+        public List<Clima> climaData = [];
         public List<double> temperaturaData = [];
         public List<double> umidadeData = [];
         public LineChart lineChart = default!;
@@ -26,20 +27,21 @@ namespace projeto.Components.Component
             }
             return lista;
         }
-        protected override void OnInitialized()
+        protected override async Task OnInitializedAsync()
         {
             chartData = new ChartData
             {
                 Datasets = DataSets(temperaturaData, umidadeData),
                 Labels = Labels(),
             };
+            climaData.Add(await consultas.GetClima());
         }
         protected override async Task OnAfterRenderAsync(bool firstRender)
         {
             if (firstRender)
             {
                 await lineChart.InitializeAsync(chartData, ChartOptions());
-                Console.WriteLine("Render temperatura:");
+
 
                 while (true)
                 {
@@ -49,13 +51,11 @@ namespace projeto.Components.Component
                         {
                             temperaturaData.RemoveAt(0);
                             umidadeData.RemoveAt(0);
+                            climaData.RemoveAt(0);
                         }
-                        Clima clima = await consultas.GetClima();
-                        Console.WriteLine("Temperatura: " + clima.Temperatura);
-                        Console.WriteLine("Umidade: " + clima.Umidade);
-                        Console.WriteLine("Id: " + clima.Id);
-                        temperaturaData.Add(clima.Temperatura);
-                        umidadeData.Add(clima.Umidade);
+                        climaData.Add(await consultas.GetClima());
+                        temperaturaData.Add(climaData.LastOrDefault()!.Temperatura);
+                        umidadeData.Add(climaData.LastOrDefault()!.Umidade);
 
                         chartData = new ChartData
                         {
@@ -70,7 +70,7 @@ namespace projeto.Components.Component
                         continue;
                     }
                     await InvokeAsync(StateHasChanged);
-                    await Task.Delay(5000);
+                    await Task.Delay(4000);
                 }
             }
         }
@@ -81,9 +81,9 @@ namespace projeto.Components.Component
             temperatura = new LineChartDataset
             {
                 Label = "Temperatura",
-                BackgroundColor = new List<string> { colors[0] },
+                BackgroundColor = new List<string> { colors[8] },
                 Data = dataTemperatura,
-                BorderColor = new List<string> { colors[0] },
+                BorderColor = new List<string> { colors[8] },
                 BorderWidth = new List<double> { 2 },
                 HoverBorderWidth = new List<double> { 4 },
                 PointBackgroundColor = new List<string> { colors[0] },
@@ -94,9 +94,9 @@ namespace projeto.Components.Component
             umidade = new LineChartDataset
             {
                 Label = "Umidade",
-                BackgroundColor = new List<string> { colors[1] },
+                BackgroundColor = new List<string> { colors[0] },
                 Data = dataUmidade,
-                BorderColor = new List<string> { colors[1] },
+                BorderColor = new List<string> { colors[0] },
                 BorderWidth = new List<double> { 2 },
                 HoverBorderWidth = new List<double> { 4 },
                 PointBackgroundColor = new List<string> { colors[1] },
@@ -116,7 +116,7 @@ namespace projeto.Components.Component
             lineChartOptions.Scales.Y!.Max = 100;
             lineChartOptions.Scales.X!.Max = 1000;
 
-            lineChartOptions.Scales.X!.Title!.Text = DateTime.Now.Date.ToString("dd/MM/yyyy");
+            lineChartOptions.Scales.X!.Title!.Text = climaData.LastOrDefault()!.Data.ToString();
             lineChartOptions.Scales.X.Title.Display = true;
 
             lineChartOptions.Plugins.Title!.Text = "Clima";
