@@ -12,7 +12,7 @@ namespace projeto.Controllers
             _consultas = consultas;
         }
 
-        [HttpPost, Route("/clima/{temperatura}/{umidade}")]
+        [HttpGet, Route("/clima/{temperatura}/{umidade}")]
         public IActionResult Post(float temperatura, float umidade)
         {
             try
