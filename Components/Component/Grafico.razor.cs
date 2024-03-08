@@ -119,7 +119,7 @@ namespace projeto.Components.Component
             lineChartOptions.Responsive = true;
             lineChartOptions.Interaction = new Interaction { Mode = InteractionMode.Index };
 
-            lineChartOptions.Scales.Y!.Max = 100;
+            lineChartOptions.Scales.Y!.Max = 70;
             lineChartOptions.Scales.X!.Max = 1000;
 
             lineChartOptions.Scales.X!.Title!.Text = climaData.LastOrDefault()!.Data.ToString();
