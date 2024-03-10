@@ -46,7 +46,7 @@ namespace projeto.Components.Component
         {
             if (firstRender)
             {
-                await lineChart.InitializeAsync(chartData, ChartOptions());
+                await lineChart.InitializeAsync(chartData, ChartOptions(40, 20));
 
 
                 while (true)
@@ -68,8 +68,18 @@ namespace projeto.Components.Component
                             Datasets = DataSets(temperaturaData, umidadeData),
                             Labels = Labels(),
                         };
+                        double maiorNumero = temperaturaData.Last() > umidadeData.Last() ? temperaturaData.Last() + 10 : umidadeData.Last() + 10;
+                        double menorNumero = temperaturaData.Last() < umidadeData.Last() ? temperaturaData.Last() - 10 : umidadeData.Last() - 10;
 
-                        await lineChart.UpdateAsync(chartData, ChartOptions());
+
+                        if (maiorNumero > 100)
+                            maiorNumero = 100;
+
+                        if (menorNumero < 0)
+                            menorNumero = 0;
+
+
+                        await lineChart.UpdateAsync(chartData, ChartOptions(maiorNumero, menorNumero));
                     }
                     catch
                     {
@@ -113,13 +123,15 @@ namespace projeto.Components.Component
             datasets.Add(umidade);
             return datasets;
         }
-        LineChartOptions ChartOptions()
+        LineChartOptions ChartOptions(double alturaMax, double alturaMin)
         {
             lineChartOptions = new();
             lineChartOptions.Responsive = true;
             lineChartOptions.Interaction = new Interaction { Mode = InteractionMode.Index };
 
-            lineChartOptions.Scales.Y!.Max = 70;
+            lineChartOptions.Scales.Y!.Max = alturaMax;
+            lineChartOptions.Scales.Y!.Min = alturaMin;
+
             lineChartOptions.Scales.X!.Max = 1000;
 
             lineChartOptions.Scales.X!.Title!.Text = climaData.LastOrDefault()!.Data.ToString();
