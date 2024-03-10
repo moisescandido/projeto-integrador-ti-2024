@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using projeto.db;
 using projeto.Models;
@@ -12,7 +13,7 @@ namespace projeto.Controllers
             _consultas = consultas;
         }
 
-        [HttpGet, Route("/clima/{temperatura}/{umidade}")]
+        [Authorize, HttpGet, Route("/clima/{temperatura}/{umidade}")]
         public IActionResult Post(float temperatura, float umidade)
         {
             try

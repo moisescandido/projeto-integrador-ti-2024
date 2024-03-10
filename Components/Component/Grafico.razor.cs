@@ -68,8 +68,8 @@ namespace projeto.Components.Component
                             Datasets = DataSets(temperaturaData, umidadeData),
                             Labels = Labels(),
                         };
-                        double maiorNumero = temperaturaData.Last() > umidadeData.Last() ? temperaturaData.Last() + 10 : umidadeData.Last() + 10;
-                        double menorNumero = temperaturaData.Last() < umidadeData.Last() ? temperaturaData.Last() - 10 : umidadeData.Last() - 10;
+                        double maiorNumero = temperaturaData.Max() > umidadeData.Max() ? temperaturaData.Max() + 5 : umidadeData.Max() + 10;
+                        double menorNumero = temperaturaData.Min() < umidadeData.Min() ? temperaturaData.Min() - 5 : umidadeData.Min() - 10;
 
 
                         if (maiorNumero > 100)
