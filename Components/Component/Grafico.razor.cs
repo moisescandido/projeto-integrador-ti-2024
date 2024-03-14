@@ -46,7 +46,7 @@ namespace projeto.Components.Component
         {
             if (firstRender)
             {
-                await lineChart.InitializeAsync(chartData, ChartOptions(40, 20));
+                await lineChart.InitializeAsync(chartData, ChartOptions());
 
 
                 while (true)
@@ -68,18 +68,8 @@ namespace projeto.Components.Component
                             Datasets = DataSets(temperaturaData, umidadeData),
                             Labels = Labels(),
                         };
-                        double maiorNumero = temperaturaData.Max() > umidadeData.Max() ? temperaturaData.Max() + 5 : umidadeData.Max() + 10;
-                        double menorNumero = temperaturaData.Min() < umidadeData.Min() ? temperaturaData.Min() - 5 : umidadeData.Min() - 10;
 
-
-                        if (maiorNumero > 100)
-                            maiorNumero = 100;
-
-                        if (menorNumero < 0)
-                            menorNumero = 0;
-
-
-                        await lineChart.UpdateAsync(chartData, ChartOptions(maiorNumero, menorNumero));
+                        await lineChart.UpdateAsync(chartData, ChartOptions());
                     }
                     catch
                     {
@@ -123,14 +113,11 @@ namespace projeto.Components.Component
             datasets.Add(umidade);
             return datasets;
         }
-        LineChartOptions ChartOptions(double alturaMax, double alturaMin)
+        LineChartOptions ChartOptions()
         {
             lineChartOptions = new();
             lineChartOptions.Responsive = true;
-            lineChartOptions.Interaction = new Interaction { Mode = InteractionMode.Index };
-
-            lineChartOptions.Scales.Y!.Max = alturaMax;
-            lineChartOptions.Scales.Y!.Min = alturaMin;
+            lineChartOptions.Interaction = new Interaction { Mode = InteractionMode.Nearest };
 
             lineChartOptions.Scales.X!.Max = 1000;
 

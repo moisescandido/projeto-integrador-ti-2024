@@ -314,3 +314,11 @@
 /home/goliaz/Projetos/projeto-integrador-ti-2024/bin/Debug/net8.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 /home/goliaz/Projetos/projeto-integrador-ti-2024/bin/Debug/net8.0/Microsoft.IdentityModel.Tokens.dll
 /home/goliaz/Projetos/projeto-integrador-ti-2024/bin/Debug/net8.0/System.IdentityModel.Tokens.Jwt.dll
+/home/moises/Projetos/projeto-integrador-ti-2024/bin/Debug/net8.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/home/moises/Projetos/projeto-integrador-ti-2024/bin/Debug/net8.0/Microsoft.IdentityModel.Abstractions.dll
+/home/moises/Projetos/projeto-integrador-ti-2024/bin/Debug/net8.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/home/moises/Projetos/projeto-integrador-ti-2024/bin/Debug/net8.0/Microsoft.IdentityModel.Logging.dll
+/home/moises/Projetos/projeto-integrador-ti-2024/bin/Debug/net8.0/Microsoft.IdentityModel.Protocols.dll
+/home/moises/Projetos/projeto-integrador-ti-2024/bin/Debug/net8.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+/home/moises/Projetos/projeto-integrador-ti-2024/bin/Debug/net8.0/Microsoft.IdentityModel.Tokens.dll
+/home/moises/Projetos/projeto-integrador-ti-2024/bin/Debug/net8.0/System.IdentityModel.Tokens.Jwt.dll

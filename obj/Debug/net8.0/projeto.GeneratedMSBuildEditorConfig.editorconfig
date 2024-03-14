@@ -9,35 +9,35 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = projeto
 build_property.RootNamespace = projeto
-build_property.ProjectDir = /home/goliaz/Projetos/projeto-integrador-ti-2024/
+build_property.ProjectDir = /home/moises/Projetos/projeto-integrador-ti-2024/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = /home/goliaz/Projetos/projeto-integrador-ti-2024
+build_property.MSBuildProjectDirectory = /home/moises/Projetos/projeto-integrador-ti-2024
 build_property._RazorSourceGeneratorDebug = 
 
-[/home/goliaz/Projetos/projeto-integrador-ti-2024/Components/App.razor]
+[/home/moises/Projetos/projeto-integrador-ti-2024/Components/App.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9BcHAucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/goliaz/Projetos/projeto-integrador-ti-2024/Components/Component/Grafico.razor]
+[/home/moises/Projetos/projeto-integrador-ti-2024/Components/Component/Grafico.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Db21wb25lbnQvR3JhZmljby5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/goliaz/Projetos/projeto-integrador-ti-2024/Components/Pages/Error.razor]
+[/home/moises/Projetos/projeto-integrador-ti-2024/Components/Pages/Error.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9FcnJvci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/goliaz/Projetos/projeto-integrador-ti-2024/Components/Pages/Home.razor]
+[/home/moises/Projetos/projeto-integrador-ti-2024/Components/Pages/Home.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9Ib21lLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/goliaz/Projetos/projeto-integrador-ti-2024/Components/Routes.razor]
+[/home/moises/Projetos/projeto-integrador-ti-2024/Components/Routes.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9Sb3V0ZXMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/goliaz/Projetos/projeto-integrador-ti-2024/Components/_Imports.razor]
+[/home/moises/Projetos/projeto-integrador-ti-2024/Components/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9fSW1wb3J0cy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
